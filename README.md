@@ -34,13 +34,13 @@ If you've come across this organization without access to the book, you can purc
 
 ## How to use this code
 
-You can either:
+As you work through the chapters in the book, you can either:
 
 - **Browse online** on GitHub.
-- **Clone a chapter locally** using `git clone https://github.com/pswp/<chapter-repo-name>.git`, then install dependencies (if any) with `pip`.
+- **Clone a chapter's repo locally** using `git clone https://github.com/pswp/chapYY.git`, change your working directory (i.e., `cd chapYY`, and then install dependencies (if any) with `pip` as explained below. Make sure to replace `YY` in the URL and directory name with the chapter number you want (e.g., Chapter 5 uses `05`).
 - **Use GitHub Codespaces** by clicking the green "Code" button on a chapter's repo page, selecting the tab "Codespaces," and clicking the "Create codespace on main."
 
-If you're cloning the code into directory on your personal machine (i.e., not using Codespaces), it's recommended but not required to activate a virtual environment:
+If you're cloning the code into a directory on your personal machine (i.e., not using Codespaces), it's recommended but not required that you activate a virtual environment:
 
    ```bash
    python -m venv .venv
@@ -50,11 +50,13 @@ If you're cloning the code into directory on your personal machine (i.e., not us
    source .venv/bin/activate
    ```
 
-To install dependencies (if `requirements.txt` exists in a chapter's repo):
+Finally, to install dependencies (if `requirements.txt` exists in a chapter's repo):
 
    ```bash
    pip install -r requirements.txt
    ```
+
+When you're done with the virtual environment, run `deactivate`.
 
 ## To modify and run the code
 
@@ -68,7 +70,7 @@ If you need help getting started with an IDE, please read [my short introduction
 
 ## Issues and errata
 
-I'm happy to hear about any problems that you find, including typos, bugs, and mismatches between a code repository and the book's text. Before reporting any of these issues, please check to see if your issue is already reported in this repo or the repo for a specific chapter. If not, please open an issue as follows:
+I'm happy to hear about any problems that you find, including typos, bugs, and mismatches between a code repository and the book's text. Before reporting any of these issues, please check to see if your issue is already reported in this repo or the repo for your current chapter. If not, please open an issue as follows:
 
 - If the problem is clearly **about code in a specific chapter**, please open an issue in that chapter’s repository.
 - If the issue spans multiple chapters or is more general, open an issue here in `pswp-index`.
@@ -79,3 +81,5 @@ When reporting, please include:
 - The chapter number and section title (e.g., “Chapter 5, The game loop”)
 - The filename, line number(s), and a short description of the problem.
 - If something's wrong with a program's execution, please describe how you ran the program and the exeuction result (e.g., error message).
+
+Thank you, and happy learning!
